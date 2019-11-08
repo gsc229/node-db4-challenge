@@ -1,8 +1,8 @@
 
 exports.seed = function (knex) {
   return knex('ingredients').insert([
-    { name: 'eggs' }, //1
-    { name: 'flour' }, //2
-    { name: 'milk' } //3
+    { ingredient: 'eggs' }, //1
+    { ingredient: 'flour' }, //2
+    { ingredient: 'milk' } //3
   ]);
 };

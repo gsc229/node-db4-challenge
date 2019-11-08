@@ -1,7 +1,7 @@
 exports.up = function (knex) {
   return knex.schema.createTable('recipes', tbl => {
     tbl.increments(); // the type is integer w/o neg. values
-    tbl.string('name', 255)
+    tbl.string('recipe_name', 255)
       .notNullable();
   })
     .createTable('steps', tbl => {
@@ -24,7 +24,7 @@ exports.up = function (knex) {
 
     .createTable('ingredients', tbl => {
       tbl.increments();
-      tbl.string('name', 255)
+      tbl.string('ingredient', 255)
         .notNullable()
     })
 
